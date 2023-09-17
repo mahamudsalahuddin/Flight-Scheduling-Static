@@ -1,7 +1,6 @@
-import { Box, Button, Container, Grid, Typography } from "@mui/material";
+import { Box, Button, Container, Typography } from "@mui/material";
 import React from "react";
 import CategoryComponent from "./CategoryComponent";
-import ButtonComponent from "./ButtonComponent";
 import FlightTakeoffIcon from "@mui/icons-material/FlightTakeoff";
 import FlightLandIcon from "@mui/icons-material/FlightLand";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
@@ -12,17 +11,16 @@ const BannerBottomComponent = () => {
       <Box
         sx={{
           position: "absolute",
-          bottom: 170,
+          bottom:{xs:"480px", sm:"400px", md: 170, lg:170}
         }}
       >
         <CategoryComponent />
       </Box>
       <Box
         sx={{
-          height: 170,
+          height: { xs: "480px", sm: "400px", md: 170 },
           width: "100%",
           background: "#c41d7f",
-          //   opacity: 0.8,
           position: "absolute",
           bottom: 0,
           left: 0,
@@ -34,9 +32,6 @@ const BannerBottomComponent = () => {
           sx={{
             position: "absolute",
             height: "100%",
-            // display:"flex",
-            // justifyContent:"center",
-            // alignItems:"center",
             width: "100%",
           }}
         >
@@ -80,8 +75,25 @@ const BannerBottomComponent = () => {
               </Button>
             </div>
           </div>
-          <div className="ab2">
-            <div className="a1">
+          <Box
+            sx={{
+              display: { xs: "flex", sm: "flex" },
+              height: "70%",
+              width: "100%",
+              justifyContent: "space-between",
+              flexDirection: "row",
+              columnGap: "5px",
+              flexWrap: { xs: "wrap", md: "nowrap" },
+              // flexWrap:"nowrap"
+            }}
+            className="ab2"
+          >
+            <Box
+              sx={{
+                width: { xs: "100%", md: "35%", lg: "35%" },
+              }}
+              className="a1"
+            >
               <div className="b1 common">
                 <FlightTakeoffIcon
                   sx={{
@@ -112,24 +124,57 @@ const BannerBottomComponent = () => {
                   DSV, Dubai Intl Airport{" "}
                 </Typography>
               </div>
-            </div>
-            <div className="a2 common">
+            </Box>
+            <Box
+              sx={{
+                width: { xs: "45%", sm: "15%" },
+              }}
+              className="a2 common"
+            >
               <div className="calendar1">
                 <CalendarMonthIcon />
               </div>
-              <div className="date">
+              <Box
+                sx={{
+                  width: "90%",
+                  fontFamily: "poppins",
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  paddingY: { sm: "30px", lg: "20px" },
+                }}
+                className="date"
+              >
                 <p>August</p>
                 <h2>22</h2>
                 <p>Tuesday</p>
-              </div>
-            </div>
-            <div className="a3 common">
+              </Box>
+            </Box>
+            <Box
+              sx={{
+                width: { xs: "45%", sm: "15%" },
+              }}
+              className="a3 common"
+            >
               <div className="calendar2">
                 <CalendarMonthIcon />
               </div>
-              <div className="click">Click to Return Flight</div>
-            </div>
-            <div className="a4 common">
+              <Box
+                sx={{
+                  width: { sm: "64px", md: "100px" },
+                }}
+                className="click"
+              >
+                Click to Return Flight
+              </Box>
+            </Box>
+            <Box
+              sx={{
+                width: { xs: "45%", md: "15%", lg: "15%" },
+              }}
+              className="a4 common"
+            >
               <div className="economy common">
                 <Typography
                   sx={{
@@ -154,8 +199,13 @@ const BannerBottomComponent = () => {
                   1 Passenger
                 </Typography>
               </div>
-            </div>
-            <div className="a5 common">
+            </Box>
+            <Box
+              sx={{
+                width: { xs: "45%", sm: "15%" },
+              }}
+              className="a5 common"
+            >
               <Button>
                 <SearchIcon
                   sx={{
@@ -165,8 +215,8 @@ const BannerBottomComponent = () => {
                 />
               </Button>
               <Typography>Search</Typography>
-            </div>
-          </div>
+            </Box>
+          </Box>
         </Container>
       </Box>
     </>

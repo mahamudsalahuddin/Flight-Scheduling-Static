@@ -1,4 +1,4 @@
-import { Button, Grid } from "@mui/material";
+import { Button} from "@mui/material";
 import React from "react";
 import AirplanemodeActiveIcon from "@mui/icons-material/AirplanemodeActive";
 import TravelExploreIcon from "@mui/icons-material/TravelExplore";
@@ -12,12 +12,10 @@ const CategoryComponent = () => {
           background: "#ec008c",
           color: "white",
           gap: 1,
-          // fontSize: 16,
           textTransform: "none",
           marginX: "2px",
           borderRadius: "5px 5px 0 0",
           padding: "5px 10px",
-          // fontFamily: "poppins",
         }}
       >
         {" "}
@@ -33,12 +31,10 @@ const CategoryComponent = () => {
           background: "#ff3baf",
           color: "white",
           gap: 1,
-          // fontSize: 16,
           textTransform: "none",
           paddingX: "20px",
           borderRadius: "5px 5px 0 0",
           padding: "5px 10px",
-          // fontFamily: "poppins",
         }}
       >
         {" "}
@@ -50,12 +46,10 @@ const CategoryComponent = () => {
           background: "#ff3baf",
           color: "white",
           gap: 1,
-          // fontSize: 16,
           textTransform: "none",
           marginX: "2px",
           borderRadius: "5px 5px 0 0",
           padding: "5px 10px",
-          // fontFamily: "poppins",
         }}
       >
         {" "}

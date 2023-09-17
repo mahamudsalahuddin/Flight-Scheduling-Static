@@ -12,7 +12,7 @@ const HotDeals = () => {
       <Box
         sx={{
           display: "flex",
-          flexDirection: "row",
+          flexDirection: {xs:"column", md:"row"},
           justifyContent: "space-between",
         }}
       >
@@ -21,7 +21,7 @@ const HotDeals = () => {
             width: "100%",
             fontFamily: "poppins",
             fontWeight: 500,
-            fontSize: 40,
+            fontSize: {xs:"30px", ms:"40px"},
           }}
         >
           Hot Deals
@@ -30,8 +30,8 @@ const HotDeals = () => {
           sx={{
             fontFamily: "poppins",
             fontWeight: 500,
-            gap: 8,
-            background: "#ffa7d2",
+            // gap: 8,
+            background: "rgba(255,234,247,255)",
             color: "#ec008c",
             display: "flex",
             flexDirection: "row",

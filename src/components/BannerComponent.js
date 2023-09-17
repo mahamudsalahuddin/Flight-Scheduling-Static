@@ -9,13 +9,12 @@ const BannerComponent = () => {
       position:"relative"
     }}>
     <Container sx={{
-        height: 400
+        height: { xs: "700px", sm: "620px", md: 400 },
     }}>
         <Typography variant="h3" sx={{
             paddingTop:6,
             color:"#fff"
         }}>Let's make your adventure!</Typography>
-        {/* <div className="bottomBanner"></div> */}
         <BannerBottomComponent/>
     </Container>
     </Box>

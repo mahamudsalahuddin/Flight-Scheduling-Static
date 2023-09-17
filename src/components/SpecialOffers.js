@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Container, ListItem, Typography } from "@mui/material";
+import { Box, Container,Typography } from "@mui/material";
 import CardComponent from "./CardComponent";
 
 const SpecialOffers = () => {
@@ -21,7 +21,7 @@ const SpecialOffers = () => {
             width: "100%",
             fontFamily: "poppins",
             fontWeight: 500,
-            fontSize: 40,
+            fontSize: {xs:"30px", ms:"40px"},
           }}
         >
           Special Offers
@@ -35,7 +35,8 @@ const SpecialOffers = () => {
               width:"70px",
               display:"flex",
               justifyContent:"center",
-              alignItems:"center"
+              alignItems:"center",
+              fontSize: {xs:"13px", ms:"16px"},
             }}
           >
             View All

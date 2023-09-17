@@ -4,47 +4,16 @@
   box-sizing: border-box;
 }
 
-/* .container {
-  height: 2000px;
-} */
-/* nav {
-  background-color: #ec008c;
-  max-width: 100%;
-}
-
-.box {
-  max-width: 1407px;
-  margin: 0 auto;
-  padding: 15px 20px;
-  
-}
-.navbar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  
-}
-*/
 .imageLogo {
   width: 110px;
 }
 
 .banner {
-  /* width: 22%; */
   position: relative;
   background: linear-gradient(0deg, rgba(255, 168, 217, 0.8), rgba(255, 168, 217, 0.8)), url("../public/assets/banner.jpg");
   background-repeat: no-repeat;
 }
-/* linear-gradient(0deg, rgba(255, 0, 150, 0.3), rgba(56, 0, 33, 0.3)),  */
-/*
-.box h1{
-  color: #fff;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  font-size: 35px;
-  padding-top: 37px;
-}*/
+
 .bottomBanner {
   height: 150px;
   width: 100%;
@@ -53,30 +22,26 @@
   bottom: 0;
   opacity: 0.9;
 }
-/* .banner{
-      background:linear-gradient(0deg, rgba(255, 0, 150, 0.3), rgba(255, 0, 150, 0.3)), url(https://picsum.photos/id/1043/800/600);
-      background-size:cover; 
-      background-position: center;
-} */
+
 
 .ab1 {
   height: 30%;
-  /* background-color: red; */
   display: flex;
   flex-direction: row;
   align-items: center;
   column-gap: 5px;
 }
 
-.ab2 {
+/* .ab2 {
   height: 70%;
   display: flex;
+  width: 100%;
   justify-content: space-between;
   column-gap: 5px;
-}
+} */
 .a1 {
-  width: 35%;
-  background-color: #cf4493;
+  width: 100%;
+  /* background-color: #cf4493; */
   display: flex;
   flex-direction: column;
   row-gap: 5px;
@@ -91,14 +56,14 @@
   background-color: #fff;
   display: flex;
   align-items: center;
-  padding-left: 10px;
+  padding:10px 0 10px  40px ;
 }
 .b2 {
   height: 50%;
   background-color: #fff;
   display: flex;
   align-items: center;
-  padding-left: 10px;
+  padding:10px 0 10px  40px ;
 }
 .a2 {
   width: 15%;
@@ -110,13 +75,12 @@
 }
 .calendar1 {
   width: 10%;
-  /* margin-left: 20px; */
   position: absolute;
   top: 5px;
   left: 10px;
   margin-top: 5px;
 }
-.date {
+/* .date {
   width: 90%;
   font-family: poppins;
   display: flex;
@@ -124,7 +88,7 @@
   justify-content: center;
   align-items: center;
   padding: 20px 0;
-}
+} */
 .date h2 {
   font-size: 20px;
   font-weight: 500;
@@ -144,7 +108,6 @@
   margin-top: 5px;
 }
 .click {
-  width: 100px;
   font-family: poppins;
   font-weight: 500;
   font-size: 13px;
@@ -167,7 +130,6 @@
   background-color: #fff;
 }
 .a5 {
-  width: 15%;
   background-color: #ec008c;
   margin-bottom: 20px;
   margin-top: 10px;
@@ -204,17 +166,7 @@
   visibility: visible;
 }
 
-.MuiCardContent-root {
-  position: absolute;
-  bottom: 88px;
-  left: 36px;
-  right: 0;
-  visibility: hidden;
-  
-}
-
-
 .whatweaccept{
-  width: 433px;
+  width: 343px;
   margin-top: 5px;
 }
